@@ -30,39 +30,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 02",
-      "server": "178.172.235.73",
-      "server_port": 443,
-      "uuid": "0c4e0fa4-d16e-47a2-8325-39a1a8fb04d8",
-      "tls": {
-        "enabled": true,
-        "server_name": "gfgfdgdfg.apruxdomain.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "httpupgrade"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01",
-        "🇧🇾 白俄罗斯 (Belarus) 02"
+        "🇧🇾 白俄罗斯 (Belarus) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01",
-        "🇧🇾 白俄罗斯 (Belarus) 02"
+        "🇧🇾 白俄罗斯 (Belarus) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

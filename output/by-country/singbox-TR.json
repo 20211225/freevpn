@@ -5,14 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽)",
-      "server": "tutaim.azad0namah.ir",
-      "server_port": 8080,
-      "uuid": "fdc1206a-9d2e-42b7-b615-9ccea8cf70ee"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02",
+      "tag": "🇹🇷 土耳其 (Turkey) 01",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -22,7 +15,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -33,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03",
+      "tag": "🇹🇷 土耳其 (Turkey) 02",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -42,7 +35,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -53,7 +46,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04",
+      "tag": "🇹🇷 土耳其 (Turkey) 03",
       "server": "85.192.48.142",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -73,11 +66,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04",
+      "server": "shop.neexbyte.ir",
+      "server_port": 8443,
+      "uuid": "8bb52771-052e-40b5-ab53-c6e151ad2290",
+      "tls": {
+        "enabled": true,
+        "server_name": "shop.neexbyte.ir",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽)",
+        "🇹🇷 土耳其 (Turkey) 01",
         "🇹🇷 土耳其 (Turkey) 02",
         "🇹🇷 土耳其 (Turkey) 03",
         "🇹🇷 土耳其 (Turkey) 04"
@@ -87,7 +95,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽)",
+        "🇹🇷 土耳其 (Turkey) 01",
         "🇹🇷 土耳其 (Turkey) 02",
         "🇹🇷 土耳其 (Turkey) 03",
         "🇹🇷 土耳其 (Turkey) 04"
