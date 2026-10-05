@@ -6,29 +6,6 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01",
-      "server": "104.24.34.193",
-      "server_port": 443,
-      "uuid": "d042a74a-c305-4eec-a89f-39a348022c92",
-      "tls": {
-        "enabled": true,
-        "server_name": "dry-butterfly-8eb9.tmpgnacio83.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "ws ",
-        "headers": {
-          "Host": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -48,47 +25,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03",
-      "server": "34.87.229.148",
-      "server_port": 443,
-      "uuid": "4f865f35-cf47-4e7f-a7e6-8882511a1b36",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4",
-          "short_id": "8a7d5e0248cdb1b1"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04",
-      "server": "137.23.3.238",
-      "password": "b42d90fa667942aebc734d60",
-      "tls": {
-        "enabled": true,
-        "server_name": "rmgyvpn.rest",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
-      },
-      "server_ports": [
-        "20000:30000",
-        "20000:20000"
-      ]
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02",
       "server": "vpn-au-001.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -99,29 +37,25 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06",
-      "server": "34.40.217.165",
-      "server_port": 443,
-      "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03",
+      "server": "137.23.3.238",
+      "server_port": 20000,
+      "password": "b42d90fa667942aebc734d60",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E",
-          "short_id": "d725f0dd8cce210f"
-        }
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 07",
-      "server": "103.30.76.65",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04",
+      "server": "43.255.156.57",
       "server_port": 39518,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
@@ -140,22 +74,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 08",
-      "server": "152.67.115.203",
-      "server_port": 443,
-      "password": "633bc3be486b646190661ac2387c150a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -163,11 +81,7 @@
         "🇦🇺 澳大利亚 (Australia) 01",
         "🇦🇺 澳大利亚 (Australia) 02",
         "🇦🇺 澳大利亚 (Australia) 03",
-        "🇦🇺 澳大利亚 (Australia) 04",
-        "🇦🇺 澳大利亚 (Australia) 05",
-        "🇦🇺 澳大利亚 (Australia) 06",
-        "🇦🇺 澳大利亚 (Australia) 07",
-        "🇦🇺 澳大利亚 (Australia) 08"
+        "🇦🇺 澳大利亚 (Australia) 04"
       ]
     },
     {
@@ -177,11 +91,7 @@
         "🇦🇺 澳大利亚 (Australia) 01",
         "🇦🇺 澳大利亚 (Australia) 02",
         "🇦🇺 澳大利亚 (Australia) 03",
-        "🇦🇺 澳大利亚 (Australia) 04",
-        "🇦🇺 澳大利亚 (Australia) 05",
-        "🇦🇺 澳大利亚 (Australia) 06",
-        "🇦🇺 澳大利亚 (Australia) 07",
-        "🇦🇺 澳大利亚 (Australia) 08"
+        "🇦🇺 澳大利亚 (Australia) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
