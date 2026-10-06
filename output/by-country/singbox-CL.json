@@ -4,66 +4,66 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇨🇱 智利 (Chile) 01",
+      "server": "64.176.2.21",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "xBStBEVqvGwHPocc"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 02",
       "server": "64.176.16.32",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform113"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 02",
-      "server": "64.176.22.185",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform107"
+        "path": "/platform113",
+        "headers": {
+          "Host": "platform113.halalkhor.info"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 03",
-      "server": "64.176.5.68",
+      "server": "64.176.21.217",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform103",
+        "path": "/platform115",
         "headers": {
-          "Host": "platform103.halalkhor.info"
+          "Host": "platform115.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 04",
-      "server": "64.176.10.89",
+      "server": "64.176.19.77",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform102",
+        "path": "/platform118",
         "headers": {
-          "Host": "platform102.halalkhor.info"
+          "Host": "platform118.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 05",
-      "server": "64.176.7.121",
+      "server": "64.176.2.25",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform117",
+        "path": "/platform109",
         "headers": {
-          "Host": "platform117.halalkhor.info"
+          "Host": "platform109.halalkhor.info"
         }
       }
     },
@@ -84,43 +84,46 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 07",
-      "server": "64.176.2.25",
+      "server": "64.176.7.121",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform109",
+        "path": "/platform117",
         "headers": {
-          "Host": "platform109.halalkhor.info"
+          "Host": "platform117.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 08",
-      "server": "64.176.24.232",
+      "server": "64.176.10.89",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform108"
+        "path": "/platform102",
+        "headers": {
+          "Host": "platform102.halalkhor.info"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 09",
-      "server": "64.176.19.77",
+      "server": "64.176.5.68",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform118"
+        "path": "/platform103"
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 10",
-      "server": "platform101.golnamakcert.top",
+      "server": "64.176.15.134",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
@@ -134,12 +137,26 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 11",
-      "server": "platform115.golnamakcert.top",
+      "server": "64.176.22.185",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform115"
+        "path": "/platform107"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 12",
+      "server": "64.176.24.232",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform108",
+        "headers": {
+          "Host": "platform108.halalkhor.info"
+        }
       }
     },
     {
@@ -157,7 +174,8 @@
         "🇨🇱 智利 (Chile) 08",
         "🇨🇱 智利 (Chile) 09",
         "🇨🇱 智利 (Chile) 10",
-        "🇨🇱 智利 (Chile) 11"
+        "🇨🇱 智利 (Chile) 11",
+        "🇨🇱 智利 (Chile) 12"
       ]
     },
     {
@@ -174,7 +192,8 @@
         "🇨🇱 智利 (Chile) 08",
         "🇨🇱 智利 (Chile) 09",
         "🇨🇱 智利 (Chile) 10",
-        "🇨🇱 智利 (Chile) 11"
+        "🇨🇱 智利 (Chile) 11",
+        "🇨🇱 智利 (Chile) 12"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

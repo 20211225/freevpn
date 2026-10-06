@@ -5,14 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 206.1.103.221
-  port: 42862
+  server: 206.1.100.83
+  port: 25178
   udp: true
-  type: vless
-  uuid: 90ca6370-44fb-488f-a35a-ba7faf7ce4fd
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU=
 - name: 🇹🇷 土耳其 (Turkey) 02
   server: 85.192.48.142
   port: 443
@@ -25,23 +23,8 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: ''
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 03
-  server: 206.1.103.221
-  port: 17390
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: 4zo9pQzwxsh1bMeReRoD/Ma2N3ZKvTJ6gZRhRcOGtzU=:5bsD1WmoheBbkMn4uYAa3A3ERVpjp3CRyYylrTg4sg8=
-- name: 🇹🇷 土耳其 (Turkey) 04
-  server: netork.povrak.ir
-  port: 37523
-  udp: true
-  type: vmess
-  uuid: ce0bcb75-baa7-41a7-833e-eb54a8f6a08e
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 05
   server: 78.135.73.47
   port: 443
   udp: true
@@ -53,8 +36,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 06
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 04
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -66,21 +49,27 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 07
-  server: 155.103.70.53
-  port: 30303
+- name: 🇹🇷 土耳其 (Turkey) 05
+  server: cookie.wookshop.ir
+  port: 43233
   udp: true
   type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 568bcbbc-7a90-4164-8b5d-1c0bbeccfa38
   network: ws
   ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==
+    path: /
     headers:
-      Host: wzs.echo.net.eu.org
+      Host: cookie.wookshop.ir
+- name: 🇹🇷 土耳其 (Turkey) 06
+  server: me17.msjia8844.site
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,7 +81,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04
   - 🇹🇷 土耳其 (Turkey) 05
   - 🇹🇷 土耳其 (Turkey) 06
-  - 🇹🇷 土耳其 (Turkey) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,6 +92,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04
   - 🇹🇷 土耳其 (Turkey) 05
   - 🇹🇷 土耳其 (Turkey) 06
-  - 🇹🇷 土耳其 (Turkey) 07
 rules:
 - MATCH,PROXIES
