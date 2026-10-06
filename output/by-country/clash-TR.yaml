@@ -5,6 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
+  server: 206.1.103.221
+  port: 42862
+  udp: true
+  type: vless
+  uuid: 90ca6370-44fb-488f-a35a-ba7faf7ce4fd
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇹🇷 土耳其 (Turkey) 02
+  server: 85.192.48.142
+  port: 443
+  udp: true
+  type: vless
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: nvidia.com
+  client-fingerprint: ''
+- name: 🇹🇷 土耳其 (Turkey) 03
+  server: 206.1.103.221
+  port: 17390
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: 4zo9pQzwxsh1bMeReRoD/Ma2N3ZKvTJ6gZRhRcOGtzU=:5bsD1WmoheBbkMn4uYAa3A3ERVpjp3CRyYylrTg4sg8=
+- name: 🇹🇷 土耳其 (Turkey) 04
+  server: netork.povrak.ir
+  port: 37523
+  udp: true
+  type: vmess
+  uuid: ce0bcb75-baa7-41a7-833e-eb54a8f6a08e
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 05
   server: 78.135.73.47
   port: 443
   udp: true
@@ -17,7 +54,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02
+- name: 🇹🇷 土耳其 (Turkey) 06
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -28,38 +65,22 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03
-  server: 212.74.39.235
-  port: 2053
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 07
+  server: 155.103.70.53
+  port: 30303
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 04
-  server: tr.xelnivo.ir
-  port: 5589
-  udp: true
-  type: vless
-  uuid: e40131eb-087a-48e1-9d0d-c7db5049ce1f
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   tls: true
-  reality-opts:
-    public-key: rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014
-    short-id: 8f798d413a5dbf01
-  servername: play.google.com
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05
-  server: 194.135.34.223
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4deb9957-e037-4ae2-8892-da357cc6f99f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
-    short-id: 4a46213c935e2ee4
-  servername: baltic.cendora.ru
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==
+    headers:
+      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,6 +91,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03
   - 🇹🇷 土耳其 (Turkey) 04
   - 🇹🇷 土耳其 (Turkey) 05
+  - 🇹🇷 土耳其 (Turkey) 06
+  - 🇹🇷 土耳其 (Turkey) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,5 +103,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03
   - 🇹🇷 土耳其 (Turkey) 04
   - 🇹🇷 土耳其 (Turkey) 05
+  - 🇹🇷 土耳其 (Turkey) 06
+  - 🇹🇷 土耳其 (Turkey) 07
 rules:
 - MATCH,PROXIES
