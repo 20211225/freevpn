@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01
-  server: 31.77.18.13
-  port: 8443
+  server: 77.110.96.201
+  port: 36264
   udp: true
-  type: vless
-  uuid: 961a77fd-fe35-4037-b541-e5dd056702bd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: L2voh7WsEg0a5w6Wt0S-1xO_pfR3-BxNlEE8LRzOnW4
-    short-id: 45cddb1a5cbc6c11
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: Telegram-vpnjey
+  sni: se.vpnjey2.dpdns.org
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
 - name: 🇸🇪 瑞典 (Sweden) 02
   server: 62.60.159.81
   port: 2053
@@ -28,10 +25,22 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
+- name: 🇸🇪 瑞典 (Sweden) 03
+  server: swidenlanzerotte.live
+  port: 443
+  udp: true
+  type: vless
+  uuid: 56de13ac-086e-4789-8e1e-1bf2bd90216b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
+  servername: swidenlanzerotte.live
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
+  - 🇸🇪 瑞典 (Sweden) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
+  - 🇸🇪 瑞典 (Sweden) 03
 rules:
 - MATCH,PROXIES
