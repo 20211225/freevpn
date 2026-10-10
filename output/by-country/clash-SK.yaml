@@ -4,24 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽)
-  server: p141.panda001.net
-  port: 4652
+- name: 🇸🇰 斯洛伐克 (Slovakia) 01
+  server: 80.243.228.61
+  port: 2085
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: vless
+  uuid: 8f6f8a4a-b30b-4061-bf5f-646997a6bcc9
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
+  - 🇸🇰 斯洛伐克 (Slovakia) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
+  - 🇸🇰 斯洛伐克 (Slovakia) 01
 rules:
 - MATCH,PROXIES
