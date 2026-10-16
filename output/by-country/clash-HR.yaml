@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: v4.hdacd.com
-  port: 30804
+- name: 🇭🇷 克罗地亚 (Croatia) 01 - xiaohe
+  server: ruot.ayucloudservices.nl
+  port: 35193
   udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
+  type: ss
+  cipher: aes-128-gcm
+  password: c855b71e-f3c2-442a-9429-0844eb4346c5
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇭🇷 克罗地亚 (Croatia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇭🇷 克罗地亚 (Croatia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
