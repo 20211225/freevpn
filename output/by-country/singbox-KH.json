@@ -5,26 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe",
-      "server": "88.218.95.88",
-      "server_port": 443,
-      "uuid": "b8df3f50-ffef-4c7e-9ef3-d5b156a47c02",
+      "tag": "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe",
+      "server": "38.54.93.50",
+      "server_port": 19350,
+      "uuid": "c752c174-41d2-41c3-ac2a-e4c0df9e5482",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE",
-          "short_id": "43adea0ec9f97a0a"
+          "public_key": "rlv4tZSKrdgfV2vwCdspLThdjOhNGvuUMMARHbxNnHs",
+          "short_id": "9195fcf93a"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
       }
     },
     {
@@ -32,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe"
+        "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe"
+        "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
