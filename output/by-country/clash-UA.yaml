@@ -19,13 +19,6 @@ proxies:
   client-fingerprint: qq
 - name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
   server: staging.lastilhame.monster
-  port: 49917
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
-- name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
-  server: staging.lastilhame.monster
   port: 443
   udp: true
   type: vless
@@ -44,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
 rules:
 - MATCH,PROXIES
