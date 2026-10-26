@@ -13,31 +13,19 @@ proxies:
   sni: promo.betust.net
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 150.241.87.200
-  port: 2096
+  server: 191.44.114.154
+  port: 8443
   udp: true
   type: vless
   uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  flow: xtls-rprx-vision
   tls: true
-  servername: stb6390.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stb6390.rumedia-cdn.com
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  reality-opts:
+    public-key: ndQzAcG4g-2OhvFb8EjFnZyxJ2lhawiulTLJOZrK8lY
+    short-id: c4359f3827231250
+  servername: www.wikipedia.org
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 191.44.114.179
   port: 2096
   udp: true
@@ -46,13 +34,12 @@ proxies:
   tls: true
   servername: st33614.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /cdn/v3/live
     headers:
       Host: st33614.rumedia-cdn.com
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 193.188.21.253
   port: 10444
   udp: true
@@ -64,7 +51,14 @@ proxies:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
-  client-fingerprint: safari
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: 70.34.212.124
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
 proxy-groups:
 - name: PROXIES
   type: select
