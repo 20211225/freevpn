@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - xiaohe
-  server: 122.8.45.7
-  port: 8443
+- name: 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  server: 81.208.170.142
+  port: 1500
   udp: true
   type: vless
-  uuid: 362a0364-2b0f-cd11-9c20-ab9dfbeb8b11
+  uuid: e332f028-d343-5b44-8016-b3130f39e133
   tls: true
   reality-opts:
-    public-key: wcOBPSgoOKptWa9ZHpFpmbrPfLqobBNpCgLH88Ptjhk
-  servername: download.nvidia.com
+    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
+    short-id: 775eb6408888248e
+  servername: www.ebay.com
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: TunService
+    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - xiaohe
+  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - xiaohe
+  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
