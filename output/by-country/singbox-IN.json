@@ -18,9 +18,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 02 - xiaohe",
-      "server": "178.212.35.198",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
+      "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -39,7 +50,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
+      "tag": "🇮🇳 印度 (India) 04 - xiaohe",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -58,40 +69,36 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 04 - xiaohe",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
+      "server": "139.84.132.62",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "139.84.132.62",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
+      "tag": "🇮🇳 印度 (India) 06 - xiaohe",
       "server": "in002.zestapp778.com",
       "server_port": 46362,
       "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
       "tls": {
         "enabled": true,
         "server_name": "in002.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 06 - xiaohe",
-      "server": "139.84.166.47",
-      "server_port": 8388,
+      "tag": "🇮🇳 印度 (India) 07 - xiaohe",
+      "server": "172.105.39.124",
+      "server_port": 7002,
       "method": "aes-256-gcm",
-      "password": "GEdoeeqLZtkJRgSa"
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
@@ -103,7 +110,8 @@
         "🇮🇳 印度 (India) 03 - xiaohe",
         "🇮🇳 印度 (India) 04 - xiaohe",
         "🇮🇳 印度 (India) 05 - xiaohe",
-        "🇮🇳 印度 (India) 06 - xiaohe"
+        "🇮🇳 印度 (India) 06 - xiaohe",
+        "🇮🇳 印度 (India) 07 - xiaohe"
       ]
     },
     {
@@ -115,7 +123,8 @@
         "🇮🇳 印度 (India) 03 - xiaohe",
         "🇮🇳 印度 (India) 04 - xiaohe",
         "🇮🇳 印度 (India) 05 - xiaohe",
-        "🇮🇳 印度 (India) 06 - xiaohe"
+        "🇮🇳 印度 (India) 06 - xiaohe",
+        "🇮🇳 印度 (India) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
