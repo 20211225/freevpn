@@ -18,7 +18,7 @@ proxies:
   servername: storage.yandexcloud.net
   client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  server: 132.243.242.246
+  server: 132.243.242.115
   port: 9543
   udp: true
   type: vless
@@ -29,9 +29,9 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
   servername: storage.yandexcloud.net
-  client-fingerprint: firefox
+  client-fingerprint: safari
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  server: 132.243.242.40
+  server: 195.133.93.179
   port: 9543
   udp: true
   type: vless
