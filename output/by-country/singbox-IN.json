@@ -20,7 +20,7 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - xiaohe",
-      "server": "in.smrtai.top",
+      "server": "178.212.35.198",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -28,7 +28,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -40,21 +40,73 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - xiaohe",
-      "server": "xray-dmr3b3hy-calm-maple-7.cloady.io",
-      "server_port": 443,
-      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
+      "server": "147.93.171.8",
+      "server_port": 8443,
+      "uuid": "591e7de6-f2dd-4ff9-ae21-8e00d5affa2a",
       "tls": {
         "enabled": true,
-        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+        "server_name": "147-93-171-8.sslip.io",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/0175469f14317d82"
+        "path": "/vpn-live",
+        "headers": {
+          "Host": "147-93-171-8.sslip.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 04 - xiaohe",
+      "server": "185.67.126.88",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "tls": {
+        "enabled": true,
+        "server_name": "kuruish.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
+      "server": "13.140.74.242",
+      "server_port": 443,
+      "uuid": "213224a4-6cd1-b7f4-8bbc-4f50e5ed847b",
+      "tls": {
+        "enabled": true,
+        "server_name": "xray-ikmqcro3-rapid-river-6.cloady.io",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/c54a815e676d9acc",
+        "headers": {
+          "Host": "xray-ikmqcro3-rapid-river-6.cloady.io"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 06 - xiaohe",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "in-152.67.8.205-0200"
+        }
       }
     },
     {
@@ -64,7 +116,10 @@
         "auto",
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe"
+        "🇮🇳 印度 (India) 03 - xiaohe",
+        "🇮🇳 印度 (India) 04 - xiaohe",
+        "🇮🇳 印度 (India) 05 - xiaohe",
+        "🇮🇳 印度 (India) 06 - xiaohe"
       ]
     },
     {
@@ -73,7 +128,10 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe"
+        "🇮🇳 印度 (India) 03 - xiaohe",
+        "🇮🇳 印度 (India) 04 - xiaohe",
+        "🇮🇳 印度 (India) 05 - xiaohe",
+        "🇮🇳 印度 (India) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
